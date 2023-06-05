@@ -2,7 +2,22 @@
 
 This project was built manually from code found at https://github.com/SummittDweller/Streamlit_DataScience_Apps/tree/master/Simple_CRuD_Blog_App_with_Streamlit.  Since that subdirectory is NOT a GitHub repo it could not simply be "cloned".  
 
-I'm unable to successfully install `pysqlite3` with my Python 3.11 version, so I'm attempting to run without that just using the built-in `sqlite3` package.  Thus far I get the following results...
+## Building Locally
+
+To build this project locally I suggest the following steps based on my [Proper Python](https://blog.summittdweller.com/proper-python/) approach.
+
+```
+cd ~/GitHub  
+git clone https://github.com/SummittDweller/simple-CRuD-blog-with-streamlit.git  
+cd simple-CRuD-blog-with-streamlit  
+code .   # Everything below happens in the command window within VSCode  
+python3 -m venv .venv  
+source .venv/bin/activate  
+pip install --upgrade pip  
+pip3 install -r requirements.txt  
+```
+
+I'm unable to successfully install `pysqlite3` with my Python 3.11 version, so I'm attempting to run without that just using the built-in `sqlite3` package.  Thus far I get the following results...  
 
 | Command | Outcome |
 | ---     | ---     |
