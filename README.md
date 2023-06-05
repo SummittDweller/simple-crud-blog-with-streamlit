@@ -55,6 +55,10 @@ File "/Users/mark/GitHub/simple-CRuD-blog-app-with-streamlit/blog_app(unrefactor
 
 The above **OperationlError** is perhaps due to the fact that I did NOT copy the project's _data.db_ file into this project.  Let's do that and try again...  **It Works!**  
 
+## Fixing the WordCloud Error
+
+I wanted to see what the `app.py` script would do so I performed a `pip3 install wordcloud` after which the `streamlit run app.py` command is WORKING!  That app produces what looks like the same application as the `streamlit run blog_app\(unrefactored\).py` command.  
+
 ## Next Step... Deploy and Test in the Cloud (Azure?)
 
 This is a big step forward but before taking it farther I'm going to push what I have to GitHub then see about deploying this to the cloud for testing, I'd love to see how it looks and behaves on a mobile device.  I'll probably be looking to Mackenzie and maybe the [Beginner Guide to Streamlit Deployment on Azure](https://towardsdatascience.com/beginner-guide-to-streamlit-deployment-on-azure-f6618eee1ba9) post.  
