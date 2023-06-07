@@ -1,0 +1,8 @@
+name: simple-crud-blog-app-with-streamlit
+services:
+- dockerfile_path: Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: SummittDweller/simple-crud-blog-app-with-streamlit
+  name: simple-crud-blog-app-with-streamlit

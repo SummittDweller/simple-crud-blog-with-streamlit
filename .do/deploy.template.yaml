@@ -1,0 +1,8 @@
+spec:
+  name: simple-crud-blog-app-with-streamlit
+  services:
+  - dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/SummittDweller/simple-crud-blog-app-with-streamlit.git
+    name: simple-crud-blog-app-with-streamlit

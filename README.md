@@ -63,6 +63,21 @@ I wanted to see what the `app.py` script would do so I performed a `pip3 install
 
 This is a big step forward but before taking it farther I'm going to push what I have to GitHub then see about deploying this to the cloud for testing, I'd love to see how it looks and behaves on a mobile device.  I'll probably be looking to Mackenzie and maybe the [Beginner Guide to Streamlit Deployment on Azure](https://towardsdatascience.com/beginner-guide-to-streamlit-deployment-on-azure-f6618eee1ba9) post.  
 
+Whoa!  The guidance linked above uses _Conda_ for Python management and _Docker_ for building the app... IMHO that's wrong on both counts.  Let's try [Deploying Streamlit Applications with Azure App Services](https://benalexkeen.com/deploying-streamlit-applications-with-azure-app-services/) instead.  
+
+Crap!  That looked like good guidance but using the Central US region no matter what else I select I get this...
+
+```
+{"code":"InvalidTemplateDeployment","details":[{"code":"ValidationForResourceFailed","message":"Validation failed for a resource. Check 'Error.Details[0]' for more information.","details":[{"code":"SubscriptionIsOverQuotaForSku","message":"This region has quota of 0 instances for your subscription. Try selecting different region or SKU."}]}],"message":"The template deployment 'Microsoft.Template-20230606215048' is not valid according to the validation procedure. The tracking id is '1956e93d-4d56-4f22-9a5e-7b1f0b6ef718'. See inner errors for details."}
+```
+
+And the explanation seems to be that Microsoft just doesn't provide Linux App Service in every region, and apparently none in the Central US.  8^(   Bummer.  
+
+## Azure is NO GO, Let's Try DigitalOcean
+
+Azure App Service failed miserably, so I went looking for a _DigitalOcean_ alternative, and found [SummittDweller/simple-crud-blog-app-with-streamlit](https://github.com/SummittDweller/simple-crud-blog-app-with-streamlit).  I'm going to try bringing some of Diego's repo parts into my mix to see what happens.  Wish me luck!  
+
+
 ---
 
 | Attention! |
